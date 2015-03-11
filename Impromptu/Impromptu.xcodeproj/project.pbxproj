@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		195565741AB020B30076D683 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195565731AB020B30076D683 /* SwipeViewController.swift */; };
+		195565761AB021000076D683 /* Recommendation2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195565751AB021000076D683 /* Recommendation2ViewController.swift */; };
+		19F390941AAFDC0A0084F58A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390931AAFDC0A0084F58A /* AppDelegate.swift */; };
+		19F390961AAFDC0A0084F58A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390951AAFDC0A0084F58A /* ViewController.swift */; };
+		19F390991AAFDC0A0084F58A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F390971AAFDC0A0084F58A /* Main.storyboard */; };
+		19F3909B1AAFDC0A0084F58A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F3909A1AAFDC0A0084F58A /* Images.xcassets */; };
+		19F3909E1AAFDC0A0084F58A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F3909C1AAFDC0A0084F58A /* LaunchScreen.xib */; };
+		19F390AA1AAFDC0A0084F58A /* ImpromptuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390A91AAFDC0A0084F58A /* ImpromptuTests.swift */; };
+		19F390BB1AAFDFFB0084F58A /* MarkOT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19F390B31AAFDFFB0084F58A /* MarkOT-Bold.otf */; };
+		19F390BC1AAFDFFB0084F58A /* MarkOT-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19F390B41AAFDFFB0084F58A /* MarkOT-BoldItalic.otf */; };
+		19F390BD1AAFDFFB0084F58A /* MarkOT-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19F390B51AAFDFFB0084F58A /* MarkOT-Italic.otf */; };
+		19F390BE1AAFDFFB0084F58A /* MarkOT-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19F390B61AAFDFFB0084F58A /* MarkOT-Light.otf */; };
+		19F390BF1AAFDFFB0084F58A /* MarkOT-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19F390B71AAFDFFB0084F58A /* MarkOT-LightItalic.otf */; };
+		19F390C01AAFDFFB0084F58A /* MarkOT-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19F390B81AAFDFFB0084F58A /* MarkOT-Medium.otf */; };
+		19F390C11AAFDFFB0084F58A /* MarkOT-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19F390B91AAFDFFB0084F58A /* MarkOT-MediumItalic.otf */; };
+		19F390C21AAFDFFB0084F58A /* MarkOT.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19F390BA1AAFDFFB0084F58A /* MarkOT.otf */; };
+		19F390C41AB014C80084F58A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390C31AB014C80084F58A /* MenuViewController.swift */; };
+		19F390C61AB014D70084F58A /* RecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390C51AB014D70084F58A /* RecommendationViewController.swift */; };
+		19F390C81AB014DF0084F58A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390C71AB014DF0084F58A /* DetailViewController.swift */; };
+		19F390CA1AB015640084F58A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390C91AB015640084F58A /* FavoritesViewController.swift */; };
+		19F390CC1AB01A430084F58A /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390CB1AB01A430084F58A /* InviteViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19F390A41AAFDC0A0084F58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19F390861AAFDC0A0084F58A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19F3908D1AAFDC0A0084F58A;
+			remoteInfo = Impromptu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		195565731AB020B30076D683 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		195565751AB021000076D683 /* Recommendation2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommendation2ViewController.swift; sourceTree = "<group>"; };
+		19F3908E1AAFDC0A0084F58A /* Impromptu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Impromptu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F390921AAFDC0A0084F58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F390931AAFDC0A0084F58A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19F390951AAFDC0A0084F58A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19F390981AAFDC0A0084F58A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19F3909A1AAFDC0A0084F58A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		19F3909D1AAFDC0A0084F58A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		19F390A31AAFDC0A0084F58A /* ImpromptuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImpromptuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F390A81AAFDC0A0084F58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F390A91AAFDC0A0084F58A /* ImpromptuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpromptuTests.swift; sourceTree = "<group>"; };
+		19F390B31AAFDFFB0084F58A /* MarkOT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOT-Bold.otf"; sourceTree = "<group>"; };
+		19F390B41AAFDFFB0084F58A /* MarkOT-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOT-BoldItalic.otf"; sourceTree = "<group>"; };
+		19F390B51AAFDFFB0084F58A /* MarkOT-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOT-Italic.otf"; sourceTree = "<group>"; };
+		19F390B61AAFDFFB0084F58A /* MarkOT-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOT-Light.otf"; sourceTree = "<group>"; };
+		19F390B71AAFDFFB0084F58A /* MarkOT-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOT-LightItalic.otf"; sourceTree = "<group>"; };
+		19F390B81AAFDFFB0084F58A /* MarkOT-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOT-Medium.otf"; sourceTree = "<group>"; };
+		19F390B91AAFDFFB0084F58A /* MarkOT-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOT-MediumItalic.otf"; sourceTree = "<group>"; };
+		19F390BA1AAFDFFB0084F58A /* MarkOT.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarkOT.otf; sourceTree = "<group>"; };
+		19F390C31AB014C80084F58A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		19F390C51AB014D70084F58A /* RecommendationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationViewController.swift; sourceTree = "<group>"; };
+		19F390C71AB014DF0084F58A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		19F390C91AB015640084F58A /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		19F390CB1AB01A430084F58A /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19F3908B1AAFDC0A0084F58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F390A01AAFDC0A0084F58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19F390851AAFDC0A0084F58A = {
+			isa = PBXGroup;
+			children = (
+				19F390901AAFDC0A0084F58A /* Impromptu */,
+				19F390A61AAFDC0A0084F58A /* ImpromptuTests */,
+				19F3908F1AAFDC0A0084F58A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19F3908F1AAFDC0A0084F58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19F3908E1AAFDC0A0084F58A /* Impromptu.app */,
+				19F390A31AAFDC0A0084F58A /* ImpromptuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19F390901AAFDC0A0084F58A /* Impromptu */ = {
+			isa = PBXGroup;
+			children = (
+				19F390931AAFDC0A0084F58A /* AppDelegate.swift */,
+				19F390951AAFDC0A0084F58A /* ViewController.swift */,
+				19F390971AAFDC0A0084F58A /* Main.storyboard */,
+				195565751AB021000076D683 /* Recommendation2ViewController.swift */,
+				195565731AB020B30076D683 /* SwipeViewController.swift */,
+				19F390CB1AB01A430084F58A /* InviteViewController.swift */,
+				19F390C91AB015640084F58A /* FavoritesViewController.swift */,
+				19F390C31AB014C80084F58A /* MenuViewController.swift */,
+				19F390C51AB014D70084F58A /* RecommendationViewController.swift */,
+				19F390C71AB014DF0084F58A /* DetailViewController.swift */,
+				19F3909A1AAFDC0A0084F58A /* Images.xcassets */,
+				19F3909C1AAFDC0A0084F58A /* LaunchScreen.xib */,
+				19F390911AAFDC0A0084F58A /* Supporting Files */,
+			);
+			path = Impromptu;
+			sourceTree = "<group>";
+		};
+		19F390911AAFDC0A0084F58A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19F390B31AAFDFFB0084F58A /* MarkOT-Bold.otf */,
+				19F390B41AAFDFFB0084F58A /* MarkOT-BoldItalic.otf */,
+				19F390B51AAFDFFB0084F58A /* MarkOT-Italic.otf */,
+				19F390B61AAFDFFB0084F58A /* MarkOT-Light.otf */,
+				19F390B71AAFDFFB0084F58A /* MarkOT-LightItalic.otf */,
+				19F390B81AAFDFFB0084F58A /* MarkOT-Medium.otf */,
+				19F390B91AAFDFFB0084F58A /* MarkOT-MediumItalic.otf */,
+				19F390BA1AAFDFFB0084F58A /* MarkOT.otf */,
+				19F390921AAFDC0A0084F58A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19F390A61AAFDC0A0084F58A /* ImpromptuTests */ = {
+			isa = PBXGroup;
+			children = (
+				19F390A91AAFDC0A0084F58A /* ImpromptuTests.swift */,
+				19F390A71AAFDC0A0084F58A /* Supporting Files */,
+			);
+			path = ImpromptuTests;
+			sourceTree = "<group>";
+		};
+		19F390A71AAFDC0A0084F58A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19F390A81AAFDC0A0084F58A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19F3908D1AAFDC0A0084F58A /* Impromptu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F390AD1AAFDC0A0084F58A /* Build configuration list for PBXNativeTarget "Impromptu" */;
+			buildPhases = (
+				19F3908A1AAFDC0A0084F58A /* Sources */,
+				19F3908B1AAFDC0A0084F58A /* Frameworks */,
+				19F3908C1AAFDC0A0084F58A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Impromptu;
+			productName = Impromptu;
+			productReference = 19F3908E1AAFDC0A0084F58A /* Impromptu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19F390A21AAFDC0A0084F58A /* ImpromptuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F390B01AAFDC0A0084F58A /* Build configuration list for PBXNativeTarget "ImpromptuTests" */;
+			buildPhases = (
+				19F3909F1AAFDC0A0084F58A /* Sources */,
+				19F390A01AAFDC0A0084F58A /* Frameworks */,
+				19F390A11AAFDC0A0084F58A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19F390A51AAFDC0A0084F58A /* PBXTargetDependency */,
+			);
+			name = ImpromptuTests;
+			productName = ImpromptuTests;
+			productReference = 19F390A31AAFDC0A0084F58A /* ImpromptuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19F390861AAFDC0A0084F58A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Scott Tong";
+				TargetAttributes = {
+					19F3908D1AAFDC0A0084F58A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					19F390A21AAFDC0A0084F58A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 19F3908D1AAFDC0A0084F58A;
+					};
+				};
+			};
+			buildConfigurationList = 19F390891AAFDC0A0084F58A /* Build configuration list for PBXProject "Impromptu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19F390851AAFDC0A0084F58A;
+			productRefGroup = 19F3908F1AAFDC0A0084F58A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19F3908D1AAFDC0A0084F58A /* Impromptu */,
+				19F390A21AAFDC0A0084F58A /* ImpromptuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19F3908C1AAFDC0A0084F58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F390BE1AAFDFFB0084F58A /* MarkOT-Light.otf in Resources */,
+				19F390C01AAFDFFB0084F58A /* MarkOT-Medium.otf in Resources */,
+				19F390C11AAFDFFB0084F58A /* MarkOT-MediumItalic.otf in Resources */,
+				19F390991AAFDC0A0084F58A /* Main.storyboard in Resources */,
+				19F3909E1AAFDC0A0084F58A /* LaunchScreen.xib in Resources */,
+				19F390C21AAFDFFB0084F58A /* MarkOT.otf in Resources */,
+				19F390BB1AAFDFFB0084F58A /* MarkOT-Bold.otf in Resources */,
+				19F390BD1AAFDFFB0084F58A /* MarkOT-Italic.otf in Resources */,
+				19F390BC1AAFDFFB0084F58A /* MarkOT-BoldItalic.otf in Resources */,
+				19F390BF1AAFDFFB0084F58A /* MarkOT-LightItalic.otf in Resources */,
+				19F3909B1AAFDC0A0084F58A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F390A11AAFDC0A0084F58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19F3908A1AAFDC0A0084F58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F390961AAFDC0A0084F58A /* ViewController.swift in Sources */,
+				19F390C61AB014D70084F58A /* RecommendationViewController.swift in Sources */,
+				19F390C81AB014DF0084F58A /* DetailViewController.swift in Sources */,
+				195565741AB020B30076D683 /* SwipeViewController.swift in Sources */,
+				195565761AB021000076D683 /* Recommendation2ViewController.swift in Sources */,
+				19F390C41AB014C80084F58A /* MenuViewController.swift in Sources */,
+				19F390CA1AB015640084F58A /* FavoritesViewController.swift in Sources */,
+				19F390CC1AB01A430084F58A /* InviteViewController.swift in Sources */,
+				19F390941AAFDC0A0084F58A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F3909F1AAFDC0A0084F58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F390AA1AAFDC0A0084F58A /* ImpromptuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19F390A51AAFDC0A0084F58A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19F3908D1AAFDC0A0084F58A /* Impromptu */;
+			targetProxy = 19F390A41AAFDC0A0084F58A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19F390971AAFDC0A0084F58A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19F390981AAFDC0A0084F58A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19F3909C1AAFDC0A0084F58A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19F3909D1AAFDC0A0084F58A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19F390AB1AAFDC0A0084F58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19F390AC1AAFDC0A0084F58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19F390AE1AAFDC0A0084F58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Impromptu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19F390AF1AAFDC0A0084F58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Impromptu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19F390B11AAFDC0A0084F58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImpromptuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Impromptu.app/Impromptu";
+			};
+			name = Debug;
+		};
+		19F390B21AAFDC0A0084F58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImpromptuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Impromptu.app/Impromptu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19F390891AAFDC0A0084F58A /* Build configuration list for PBXProject "Impromptu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F390AB1AAFDC0A0084F58A /* Debug */,
+				19F390AC1AAFDC0A0084F58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F390AD1AAFDC0A0084F58A /* Build configuration list for PBXNativeTarget "Impromptu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F390AE1AAFDC0A0084F58A /* Debug */,
+				19F390AF1AAFDC0A0084F58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F390B01AAFDC0A0084F58A /* Build configuration list for PBXNativeTarget "ImpromptuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F390B11AAFDC0A0084F58A /* Debug */,
+				19F390B21AAFDC0A0084F58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19F390861AAFDC0A0084F58A /* Project object */;
+}
