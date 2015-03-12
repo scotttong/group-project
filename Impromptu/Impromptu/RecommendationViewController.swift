@@ -25,6 +25,9 @@ class RecommendationViewController: UIViewController {
 		navigationController!.popToRootViewControllerAnimated(true)
 	}
 
+    @IBAction func cardOneDidTap(sender: AnyObject) {
+        performSegueWithIdentifier("swipeSegue", sender: self)
+    }
     /*
     // MARK: - Navigation
 

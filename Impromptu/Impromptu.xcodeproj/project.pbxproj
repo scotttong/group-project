@@ -28,6 +28,7 @@
 		19F390C81AB014DF0084F58A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390C71AB014DF0084F58A /* DetailViewController.swift */; };
 		19F390CA1AB015640084F58A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390C91AB015640084F58A /* FavoritesViewController.swift */; };
 		19F390CC1AB01A430084F58A /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F390CB1AB01A430084F58A /* InviteViewController.swift */; };
+		AC1025F61AB124AD005460F5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1025F51AB124AD005460F5 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		19F390C71AB014DF0084F58A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		19F390C91AB015640084F58A /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		19F390CB1AB01A430084F58A /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
+		AC1025F51AB124AD005460F5 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		19F390901AAFDC0A0084F58A /* Impromptu */ = {
 			isa = PBXGroup;
 			children = (
+				AC1025F51AB124AD005460F5 /* Common.swift */,
 				19F390931AAFDC0A0084F58A /* AppDelegate.swift */,
 				19F390951AAFDC0A0084F58A /* ViewController.swift */,
 				19F390971AAFDC0A0084F58A /* Main.storyboard */,
@@ -273,6 +276,7 @@
 				19F390C41AB014C80084F58A /* MenuViewController.swift in Sources */,
 				19F390CA1AB015640084F58A /* FavoritesViewController.swift in Sources */,
 				19F390CC1AB01A430084F58A /* InviteViewController.swift in Sources */,
+				AC1025F61AB124AD005460F5 /* Common.swift in Sources */,
 				19F390941AAFDC0A0084F58A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

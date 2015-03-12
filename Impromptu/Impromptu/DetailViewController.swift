@@ -21,9 +21,13 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backButtonDidPress(sender: AnyObject) {
+        println("back button")
+        navigationController!.popViewControllerAnimated(true)
+    }
 
     /*
-    // MARK: - Navigation
+    // MARK: - Nvigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
