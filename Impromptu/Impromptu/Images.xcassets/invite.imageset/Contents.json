@@ -3,11 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "invite.png"
+      "filename" : "invite@2x-1.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "invite@2x.png"
     },
     {
       "idiom" : "universal",

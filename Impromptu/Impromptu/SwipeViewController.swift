@@ -8,11 +8,29 @@
 
 import UIKit
 
-class SwipeViewController: UIViewController {
+class SwipeViewController: UIViewController, MDCSwipeToChooseDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		
+		let options = MDCSwipeOptions()
+		options.delegate = self
+		options.onPan = { state in
+			switch(state.direction) {
+			case .Left:
+				println("We're going left")
+			case .Right:
+				println("We're going right")
+			case .None:
+				println("We went none")
+			}
+		}
+		let swipeView = UIView(frame: CGRectMake(100, 100, 200, 200))
+		swipeView.backgroundColor = UIColor.greenColor()
+		swipeView.mdc_swipeToChooseSetup(options)
+		view.addSubview(swipeView)
+		
         // Do any additional setup after loading the view.
     }
 
@@ -35,4 +53,18 @@ class SwipeViewController: UIViewController {
     }
     */
 
+	// Mark - MDCSwipeToChooseDelegate Methods
+	
+	func viewDidCancelSwipe(view: UIView!) {
+		println("canceled")
+	}
+	
+	func view(view: UIView!, shouldBeChosenWithDirection direction: MDCSwipeDirection) -> Bool {
+		println("shouldbeChosen")
+		return true
+	}
+	func view(view: UIView!, wasChosenWithDirection direction: MDCSwipeDirection) {
+		println("was chosen")
+	}
+	
 }
