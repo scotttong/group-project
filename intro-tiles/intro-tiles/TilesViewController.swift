@@ -124,6 +124,10 @@ class TilesViewController: UIViewController {
 //		performSegueWithIdentifier("moodSegue", sender: self)
 	}
 	
+	override func viewWillAppear(animated: Bool) {
+		self.didPressReset(self)
+	}
+	
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
