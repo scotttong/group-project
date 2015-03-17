@@ -60,35 +60,35 @@ class TilesViewController: UIViewController {
 		}
 		
 		// Tile 2
-		UIView.animateWithDuration(duration, delay: 1.0, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+		UIView.animateWithDuration(duration, delay: 0.5, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
 			self.tile2.transform = CGAffineTransformMakeScale(1, 1)
 			}) { (Bool) -> Void in
 				//
 		}
 		
 		// Tile 3
-		UIView.animateWithDuration(duration, delay: 0.2, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+		UIView.animateWithDuration(duration, delay: 0.1, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
 			self.tile3.transform = CGAffineTransformMakeScale(1, 1)
 			}) { (Bool) -> Void in
 				//
 		}
 		
 		// Tile 4
-		UIView.animateWithDuration(duration, delay: 0.8, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+		UIView.animateWithDuration(duration, delay: 0.4, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
 			self.tile4.transform = CGAffineTransformMakeScale(1, 1)
 			}) { (Bool) -> Void in
 				//
 		}
 		
 		// Tile 5
-		UIView.animateWithDuration(duration, delay: 0.4, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+		UIView.animateWithDuration(duration, delay: 0.2, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
 			self.tile5.transform = CGAffineTransformMakeScale(1, 1)
 			}) { (Bool) -> Void in
 				//
 		}
 		
 		// Tile 6
-		UIView.animateWithDuration(duration, delay: 0.6, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+		UIView.animateWithDuration(duration, delay: 0.3, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
 			self.tile6.transform = CGAffineTransformMakeScale(1, 1)
 			}) { (Bool) -> Void in
 				//

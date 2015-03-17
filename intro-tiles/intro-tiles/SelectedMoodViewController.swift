@@ -11,14 +11,18 @@ import UIKit
 class SelectedMoodViewController: UIViewController {
 	@IBOutlet weak var moodBackgroundColor: UIView!
 
+	@IBOutlet weak var containerView: UIView!
 	var tilesViewController: TilesViewController!
 	var bgcolor: UIColor!
+	
+	
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
 		moodBackgroundColor.backgroundColor = bgcolor
+		
 
     }
 
@@ -44,6 +48,7 @@ class SelectedMoodViewController: UIViewController {
 		// for push transition
 		navigationController!.popViewControllerAnimated(true)
 	}
+
 
     /*
     // MARK: - Navigation

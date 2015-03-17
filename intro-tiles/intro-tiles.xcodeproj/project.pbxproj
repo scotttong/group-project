@@ -208,6 +208,7 @@
 				TargetAttributes = {
 					19FE6A4F1AB8049E0002FF00 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = UQNT32FA8A;
 					};
 					19FE6A641AB8049E0002FF00 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -465,6 +466,7 @@
 				19FE6A711AB8049E0002FF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19FE6A721AB8049E0002FF00 /* Build configuration list for PBXNativeTarget "intro-tilesTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +475,7 @@
 				19FE6A741AB8049E0002FF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
