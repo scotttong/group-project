@@ -80,11 +80,6 @@
                                     <action selector="didPressBackButton:" destination="0tW-Fo-4aG" eventType="touchUpInside" id="TNo-Nj-0zc"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="X8r-od-lRS">
-                                <rect key="frame" x="30" y="94" width="318" height="460"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

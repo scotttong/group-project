@@ -26,12 +26,24 @@ class CardViewController: UIViewController {
 		// Create the first view.
 		var card1 = createCardView("Label 1")
 		self.view.addSubview(card1)
-		
 		card1.center = CGPoint(x: view.bounds.width/2, y: view.bounds.height/2)
+
+		
+		var card2 = createCardView("Label 2")
+		card2.backgroundColor = UIColor.blueColor()
+		self.view.addSubview(card2)
+		card2.center = CGPoint(x: view.bounds.width/2, y: view.bounds.height/2)
+		
+		var card3 = createCardView("Label 3")
+		card2.backgroundColor = UIColor.redColor()
+		self.view.addSubview(card3)
+		card3.center = CGPoint(x: view.bounds.width/2, y: view.bounds.height/2)
+
+		
     }
 	
 	func createCardView(titleText :String) -> UIView {
-		let card = UIView(frame: CGRectMake(10, 10, 200, 200))
+		let card = UIView(frame: CGRectMake(10, 10, 318, 460))
 		card.backgroundColor = UIColor.greenColor()
 		let label = UILabel(frame: CGRectMake(10, 10, 180, 180))
 		label.text = titleText
@@ -51,6 +63,9 @@ class CardViewController: UIViewController {
 		let card = gestureRecognizer.view!
 		var translation = sender.translationInView(view)
 		
+	
+
+		
 		if (sender.state == UIGestureRecognizerState.Began){
 			topCardStartingPosition = card.center
 		}
@@ -63,22 +78,24 @@ class CardViewController: UIViewController {
 			// rotate the view
 			card.transform = CGAffineTransformMakeRotation(translation.x/10 * CGFloat(M_PI/180))
 			
+			
+			
 			// swipe right
 			if card.center.x > view.bounds.width/2 + 100 {
-				self.yesOrNoLabel.textColor = UIColor.greenColor()
-				self.yesOrNoLabel.text = "YEP"
-				self.yesOrNoLabel.hidden = false
+				var ynlabel = UILabel(frame: CGRect(x: 20, y: 20, width: 180, height: 180))
+				card.addSubview(ynlabel)
+				ynlabel.hidden = true
+				ynlabel.text = "YES"
+				ynlabel.hidden = false
 			}
 			//swipe left
 			else if  card.center.x < view.bounds.width/2 - 100 {
-				self.yesOrNoLabel.textColor = UIColor.redColor()
-				self.yesOrNoLabel.text = "NOPE"
-				self.yesOrNoLabel.hidden = false
+
 			}
 				
 			// didn't swipe far enough
 			else {
-				self.yesOrNoLabel.hidden = true
+
 			}
 
 			
