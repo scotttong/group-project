@@ -110,7 +110,18 @@ class TilesViewController: UIViewController {
 
 	@IBAction func didTapTile(sender: UITapGestureRecognizer) {
 		selectedTile = sender.view as UIView!
-		performSegueWithIdentifier("moodSegue", sender: self)
+		UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+			self.selectedTile.transform = CGAffineTransformMakeScale(0.8, 0.8)
+		}) { (Bool) -> Void in
+			UIView.animateWithDuration(0.1, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+				self.selectedTile.transform = CGAffineTransformMakeScale(1, 1)
+			}, completion: { (Bool) -> Void in
+				self.performSegueWithIdentifier("moodSegue", sender: self)
+
+			})
+			
+		}
+//		performSegueWithIdentifier("moodSegue", sender: self)
 	}
 	
     // MARK: - Navigation
