@@ -23,7 +23,6 @@ class TilesViewController: UIViewController {
 	
 	var fadeTransition: FadeTransition!
 	var selectedTile: UIView!
-
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,6 +108,7 @@ class TilesViewController: UIViewController {
 	}
 
 	@IBAction func didTapTile(sender: UITapGestureRecognizer) {
+        
 		selectedTile = sender.view as UIView!
 		UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
 			self.selectedTile.transform = CGAffineTransformMakeScale(0.8, 0.8)
