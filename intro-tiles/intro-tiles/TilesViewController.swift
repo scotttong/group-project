@@ -117,7 +117,6 @@ class TilesViewController: UIViewController {
 				self.selectedTile.transform = CGAffineTransformMakeScale(1, 1)
 			}, completion: { (Bool) -> Void in
 				self.performSegueWithIdentifier("moodSegue", sender: self)
-
 			})
 			
 		}

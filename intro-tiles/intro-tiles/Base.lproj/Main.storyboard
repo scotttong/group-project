@@ -246,6 +246,36 @@
                                             <action selector="didPressDismissButton:" destination="dMI-CS-n6a" eventType="touchUpInside" id="czc-7T-cAl"/>
                                         </connections>
                                     </button>
+                                    <scrollView clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="Waq-sX-vQm">
+                                        <rect key="frame" x="-323" y="71" width="1022" height="506"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-1" id="ZP8-Et-iF4">
+                                                <rect key="frame" x="350" y="20" width="321" height="466"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Mbd-Om-kKo" appends="YES" id="Ekz-i0-Qag"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-2" id="qpy-5Z-FHl">
+                                                <rect key="frame" x="681" y="20" width="321" height="466"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="xhe-ge-DoX" appends="YES" id="NS6-Jd-xZb"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-3" id="1bX-BH-TGg">
+                                                <rect key="frame" x="20" y="20" width="321" height="466"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="TZr-yF-aFO" appends="YES" id="xob-E2-XR7"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5045603514" green="0.72105258699999997" blue="0.99894565339999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -256,13 +286,24 @@
                     <navigationItem key="navigationItem" id="evC-T5-KtR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="card1" destination="ZP8-Et-iF4" id="svU-Ge-0aQ"/>
+                        <outlet property="card2" destination="qpy-5Z-FHl" id="UvZ-As-c6o"/>
+                        <outlet property="card3" destination="1bX-BH-TGg" id="o4S-me-B9i"/>
+                        <outlet property="cardScrollView" destination="Waq-sX-vQm" id="Mj7-zL-rm3"/>
                         <outlet property="containerView" destination="V4Q-eN-BMg" id="sCX-Dv-mwA"/>
                         <outlet property="moodBackgroundColor" destination="V4Q-eN-BMg" id="kL1-ZV-aAM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNb-ur-Y2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Mbd-Om-kKo">
+                    <connections>
+                        <action selector="didPan:" destination="dMI-CS-n6a" id="DTf-1A-O6G"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xhe-ge-DoX"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="TZr-yF-aFO"/>
             </objects>
-            <point key="canvasLocation" x="1140.5" y="367.5"/>
+            <point key="canvasLocation" x="1215.5" y="366.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ux2-Io-weV">
@@ -283,6 +324,11 @@
             <point key="canvasLocation" x="162" y="367"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="card-1" width="321" height="466"/>
+        <image name="card-2" width="321" height="466"/>
+        <image name="card-3" width="321" height="466"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

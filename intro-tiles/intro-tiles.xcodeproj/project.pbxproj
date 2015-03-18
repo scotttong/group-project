@@ -103,22 +103,15 @@
 		19FE6A521AB8049E0002FF00 /* intro-tiles */ = {
 			isa = PBXGroup;
 			children = (
-				19FE6A551AB8049E0002FF00 /* AppDelegate.swift */,
-				19FE6A571AB8049E0002FF00 /* ViewController.swift */,
-				19FE6A871AB80E9F0002FF00 /* SelectedMoodViewController.swift */,
-				19FE6A751AB805F20002FF00 /* TilesViewController.swift */,
 				19FE6A591AB8049E0002FF00 /* Main.storyboard */,
+				19FE6A751AB805F20002FF00 /* TilesViewController.swift */,
+				19FE6A871AB80E9F0002FF00 /* SelectedMoodViewController.swift */,
+				19FE6A571AB8049E0002FF00 /* ViewController.swift */,
+				19FE6A551AB8049E0002FF00 /* AppDelegate.swift */,
+				19FE6A5E1AB8049E0002FF00 /* LaunchScreen.xib */,
 				19FE6A5C1AB8049E0002FF00 /* Images.xcassets */,
 				19FE6A8D1AB80F640002FF00 /* Transitions */,
-				19FE6A5E1AB8049E0002FF00 /* LaunchScreen.xib */,
-				19FE6A771AB806990002FF00 /* MarkOT-Bold.otf */,
-				19FE6A781AB806990002FF00 /* MarkOT-BoldItalic.otf */,
-				19FE6A791AB806990002FF00 /* MarkOT-Italic.otf */,
-				19FE6A7A1AB806990002FF00 /* MarkOT-Light.otf */,
-				19FE6A7B1AB806990002FF00 /* MarkOT-LightItalic.otf */,
-				19FE6A7C1AB806990002FF00 /* MarkOT-Medium.otf */,
-				19FE6A7D1AB806990002FF00 /* MarkOT-MediumItalic.otf */,
-				19FE6A7E1AB806990002FF00 /* MarkOT.otf */,
+				1A6A855E1AB921FB00D5BE9E /* Mark font */,
 				19FE6A531AB8049E0002FF00 /* Supporting Files */,
 			);
 			path = "intro-tiles";
@@ -157,6 +150,21 @@
 				19FE6A8E1AB811D20002FF00 /* ScaleTransition.swift */,
 			);
 			name = Transitions;
+			sourceTree = "<group>";
+		};
+		1A6A855E1AB921FB00D5BE9E /* Mark font */ = {
+			isa = PBXGroup;
+			children = (
+				19FE6A771AB806990002FF00 /* MarkOT-Bold.otf */,
+				19FE6A781AB806990002FF00 /* MarkOT-BoldItalic.otf */,
+				19FE6A791AB806990002FF00 /* MarkOT-Italic.otf */,
+				19FE6A7A1AB806990002FF00 /* MarkOT-Light.otf */,
+				19FE6A7B1AB806990002FF00 /* MarkOT-LightItalic.otf */,
+				19FE6A7C1AB806990002FF00 /* MarkOT-Medium.otf */,
+				19FE6A7D1AB806990002FF00 /* MarkOT-MediumItalic.otf */,
+				19FE6A7E1AB806990002FF00 /* MarkOT.otf */,
+			);
+			name = "Mark font";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
