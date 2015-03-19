@@ -89,6 +89,11 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
             return true
     }
 
+    @IBAction func didTapCloseButton(sender: UITapGestureRecognizer) {
+        dismissViewControllerAnimated(true, completion: { () -> Void in
+            //
+        })
+    }
     /*
     // MARK: - Navigation
 
