@@ -37,10 +37,6 @@ class SelectedMoodViewController: UIViewController {
         // Do any additional setup after loading the views.
 		moodBackgroundColor.backgroundColor = bgcolor
         
-        // Set the scroll view to the amount of cards + gutter
-//        cardScrollView.contentSize = CGSize(width: card1.frame.width * 4 + 60, height: card1.frame.height)
-
-        
         // Set up the animation
         helpText.alpha = 0
         helpText.frame.origin.x = helpText.frame.origin.x + 50
@@ -55,8 +51,6 @@ class SelectedMoodViewController: UIViewController {
             self.helpText.frame.origin.x = self.helpText.frame.origin.x - 50
         }, completion: nil)
         
-        
-    
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,7 +62,6 @@ class SelectedMoodViewController: UIViewController {
     }
 	
 	override func viewDidAppear(animated: Bool) {
-//        originalCardPos = card1.center.y
 	}
     
 	@IBAction func didPressDismissButton(sender: AnyObject) {
@@ -90,35 +83,38 @@ class SelectedMoodViewController: UIViewController {
         var location = sender.locationInView(view)
         var translation = sender.translationInView(view)
         var velocity = sender.velocityInView(view)
-        var containerX = cardContainer.frame.origin.x
         
         if (sender.state == UIGestureRecognizerState.Began) {
             cardContainerPanBegan = cardContainer.frame.origin.x
             
         } else if(sender.state == UIGestureRecognizerState.Changed) {
+            println(cardContainer.frame.origin.x)
+            
             finalCardContainerPosition = cardContainerPanBegan + translation.x
             cardContainer.frame.origin.x = finalCardContainerPosition
             
-            println(cardContainer.frame.origin.x)
-            
         } else if(sender.state == UIGestureRecognizerState.Ended) {
+            
+            // If user scrolls left
             if (cardContainer.frame.origin.x > 0) {
                 println("state 1 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = 0
                 }, completion: nil)
-
+            
+            // If user starts to scroll to the right
             } else if (cardContainer.frame.origin.x < 0 && cardContainer.frame.origin.x > -160) {
                 println("state 2 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = 0
                     }, completion: nil)
-            
+            // If user scrolls past first card midpoint
             } else if (cardContainer.frame.origin.x < -160 && cardContainer.frame.origin.x > -485) {
                 println("state 3 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = -320
                     }, completion: nil)
+            // If user scrolls past second card midpoint
             } else if (cardContainer.frame.origin.x < -484) {
                 println("state 3 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
