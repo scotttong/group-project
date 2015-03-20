@@ -61,7 +61,6 @@ class SelectedMoodViewController: UIViewController, UIGestureRecognizerDelegate 
 		
 		var storyboard = UIStoryboard(name: "Main", bundle: nil)
 		tilesViewController = storyboard.instantiateViewControllerWithIdentifier("tilesStory") as TilesViewController
-
     }
 	
 	override func viewDidAppear(animated: Bool) {
@@ -76,21 +75,20 @@ class SelectedMoodViewController: UIViewController, UIGestureRecognizerDelegate 
 		navigationController!.popViewControllerAnimated(true)
 	}
     
-    
     @IBAction func didPressCard(sender: AnyObject) {
         
-        view.bringSubviewToFront(self.card1)
-        
-        UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-            self.card1.transform = CGAffineTransformMakeScale(0.8, 0.8)
-            }) { (Bool) -> Void in
-                UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-                    self.card1.transform = CGAffineTransformMakeScale(1.3, 1.3)
-                    }, completion: { (Bool) -> Void in
-//                        self.performSegueWithIdentifier("moodSegue", sender: self)
-                })
-                
-        }
+//        view.bringSubviewToFront(self.card1)
+//        
+//        UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+//            self.card1.transform = CGAffineTransformMakeScale(0.8, 0.8)
+//            }) { (Bool) -> Void in
+//                UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+//                    self.card1.transform = CGAffineTransformMakeScale(1.3, 1.3)
+//                    }, completion: { (Bool) -> Void in
+////                        self.performSegueWithIdentifier("moodSegue", sender: self)
+//                })
+//                
+//        }
     }
     @IBAction func didPressCard2(sender: AnyObject) {
         
