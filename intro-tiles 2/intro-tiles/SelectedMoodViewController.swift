@@ -115,14 +115,14 @@ class SelectedMoodViewController: UIViewController {
             } else if (containerX < -160 && containerX > -485) {
                 println("state 3 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
-                    self.cardContainer.frame.origin.x = -320
+                    self.cardContainer.frame.origin.x = -332
                     }, completion: nil)
                 
             // If user scrolls past second card midpoint
             } else if (containerX < -484) {
                 println("state 3 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
-                    self.cardContainer.frame.origin.x = -642
+                    self.cardContainer.frame.origin.x = -662
                     }, completion: nil)
             }
         }
