@@ -1,4 +1,4 @@
-
+ 
 //  SelectedMoodViewController.swift
 //  intro-tiles
 //
@@ -18,6 +18,7 @@ class SelectedMoodViewController: UIViewController {
     @IBOutlet weak var helpText: UILabel!
     @IBOutlet weak var contactContainer: UIView!
     @IBOutlet weak var cardContainer: UIView!
+    @IBOutlet weak var activityTitle: UILabel!
     
     var fadeTransition: FadeTransition!
 	var tilesViewController: TilesViewController!
@@ -33,6 +34,7 @@ class SelectedMoodViewController: UIViewController {
         super.viewDidLoad()
         
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        tilesViewController = storyboard.instantiateViewControllerWithIdentifier("tilesStory") as TilesViewController        
 
         // Do any additional setup after loading the views.
 		moodBackgroundColor.backgroundColor = bgcolor
@@ -47,7 +49,7 @@ class SelectedMoodViewController: UIViewController {
             self.cardContainer.frame.origin.x = self.cardContainer.frame.origin.x - 150
         }, completion: nil)
         UIView.animateWithDuration(1.3, delay: 0.3, usingSpringWithDamping: 0.6, initialSpringVelocity: 15, options: .AllowUserInteraction, animations: { () -> Void in
-            self.helpText.alpha = 1
+            self.helpText.alpha = 0.5
             self.helpText.frame.origin.x = self.helpText.frame.origin.x - 50
         }, completion: nil)
         
@@ -62,12 +64,11 @@ class SelectedMoodViewController: UIViewController {
     }
 	
 	override func viewDidAppear(animated: Bool) {
+        // println(tilesViewController.selectedText)
+//        tilesViewController.selectedText.text = activityTitle.text
 	}
     
 	@IBAction func didPressDismissButton(sender: AnyObject) {
-		// for modal transition
-		//dismissViewControllerAnimated(true, completion: nil)
-
 		// for push transition
 		navigationController!.popViewControllerAnimated(true)
 	}

@@ -23,6 +23,7 @@ class TilesViewController: UIViewController {
 	
 	var fadeTransition: FadeTransition!
 	var selectedTile: UIView!
+    var selectedText: UILabel!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,6 +111,10 @@ class TilesViewController: UIViewController {
 	@IBAction func didTapTile(sender: UITapGestureRecognizer) {
         
 		selectedTile = sender.view as UIView!
+        selectedText = sender.view?.subviews[0] as UILabel!
+        
+        println(selectedText)
+        
 		UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
 			self.selectedTile.transform = CGAffineTransformMakeScale(0.8, 0.8)
 		}) { (Bool) -> Void in
@@ -120,7 +125,6 @@ class TilesViewController: UIViewController {
 			})
 			
 		}
-//		performSegueWithIdentifier("moodSegue", sender: self)
 	}
 	
 	override func viewWillAppear(animated: Bool) {
