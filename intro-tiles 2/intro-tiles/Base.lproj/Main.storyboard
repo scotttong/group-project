@@ -255,7 +255,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" id="Heh-wa-5Lw">
+                                    <view contentMode="scaleToFill" id="Heh-wa-5Lw" userLabel="cardContainer">
                                         <rect key="frame" x="0.0" y="68" width="1030" height="506"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -270,10 +270,18 @@
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-3" id="Gu6-Rm-hPQ">
                                                 <rect key="frame" x="689" y="20" width="321" height="466"/>
                                                 <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="z7P-zK-k6C" appends="YES" id="Htd-6d-WjR"/>
+                                                </connections>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-2" id="ksc-F9-tMn">
                                                 <rect key="frame" x="358" y="20" width="321" height="466"/>
                                                 <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Mxf-N7-gKL" appends="YES" id="Vzr-Ye-0Xg"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                         <gestureRecognizers/>
@@ -334,6 +342,16 @@
                         <action selector="cardContainerPan:" destination="dMI-CS-n6a" id="1CQ-G9-1jU"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="Mxf-N7-gKL" userLabel="card 2 tap">
+                    <connections>
+                        <action selector="didTapCard:" destination="dMI-CS-n6a" id="dOp-kD-nEx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="z7P-zK-k6C" userLabel="card 3 tap">
+                    <connections>
+                        <action selector="didTapCard:" destination="dMI-CS-n6a" id="Mq1-pe-q7e"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1167.5" y="367.5"/>
         </scene>

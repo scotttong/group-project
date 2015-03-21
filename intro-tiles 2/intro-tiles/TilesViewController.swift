@@ -36,11 +36,8 @@ class TilesViewController: UIViewController {
 		tile4.transform = CGAffineTransformMakeScale(0.001, 0.001)
 		tile5.transform = CGAffineTransformMakeScale(0.001, 0.001)
 		tile6.transform = CGAffineTransformMakeScale(0.001, 0.001)
-		
-
-		
+			
 		tileIn()
-	
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,8 +46,6 @@ class TilesViewController: UIViewController {
     }
 	
 	func tileIn() {
-		
-		
 		
 		// Tile 1
 		UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
@@ -93,7 +88,6 @@ class TilesViewController: UIViewController {
 			}) { (Bool) -> Void in
 				//
 		}
-
 		
 	}
 	
@@ -112,8 +106,6 @@ class TilesViewController: UIViewController {
         
 		selectedTile = sender.view as UIView!
         selectedText = sender.view?.subviews[0] as UILabel!
-        
-        println(selectedText)
         
 		UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
 			self.selectedTile.transform = CGAffineTransformMakeScale(0.8, 0.8)
@@ -143,8 +135,8 @@ class TilesViewController: UIViewController {
 		destinationViewController.transitioningDelegate = fadeTransition
 		
 		destinationViewController.bgcolor = selectedTile.backgroundColor
+        destinationViewController.activityTitleText = selectedText
 
-		
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

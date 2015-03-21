@@ -23,6 +23,7 @@ class SelectedMoodViewController: UIViewController {
     var fadeTransition: FadeTransition!
 	var tilesViewController: TilesViewController!
 	var bgcolor: UIColor!
+    var activityTitleText: UILabel!
     
     //Card globals
     var cardContainerPanBegan : CGFloat!
@@ -32,12 +33,17 @@ class SelectedMoodViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var storyboard = UIStoryboard(name: "Main", bundle: nil)
-        tilesViewController = storyboard.instantiateViewControllerWithIdentifier("tilesStory") as TilesViewController        
 
         // Do any additional setup after loading the views.
-		moodBackgroundColor.backgroundColor = bgcolor
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        tilesViewController = storyboard.instantiateViewControllerWithIdentifier("tilesStory") as TilesViewController
+        
+        // Grab the text from the selected tile
+        tilesViewController.selectedText = activityTitleText
+        activityTitle.text = activityTitleText.text
+        
+        // Set the background color to be the same as the selected tile
+        moodBackgroundColor.backgroundColor = bgcolor
         
         // Set up the animation
         helpText.alpha = 0
@@ -59,31 +65,26 @@ class SelectedMoodViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
 		
-		var storyboard = UIStoryboard(name: "Main", bundle: nil)
-		tilesViewController = storyboard.instantiateViewControllerWithIdentifier("tilesStory") as TilesViewController
     }
-	
-	override func viewDidAppear(animated: Bool) {
-        // println(tilesViewController.selectedText)
-//        tilesViewController.selectedText.text = activityTitle.text
-	}
     
 	@IBAction func didPressDismissButton(sender: AnyObject) {
 		// for push transition
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 15, options: nil, animations: { () -> Void in
+            self.cardContainer.frame.origin.x = 0
+        }, completion: nil)
 		navigationController!.popViewControllerAnimated(true)
 	}
-    
     
     @IBAction func didTapCard(sender: UITapGestureRecognizer) {
         performSegueWithIdentifier("contactsSegue", sender: self)
     }
-    
     
     @IBAction func cardContainerPan(sender: UIPanGestureRecognizer) {
         
         var location = sender.locationInView(view)
         var translation = sender.translationInView(view)
         var velocity = sender.velocityInView(view)
+        var containerX = cardContainer.frame.origin.x
         
         if (sender.state == UIGestureRecognizerState.Began) {
             cardContainerPanBegan = cardContainer.frame.origin.x
@@ -97,26 +98,28 @@ class SelectedMoodViewController: UIViewController {
         } else if(sender.state == UIGestureRecognizerState.Ended) {
             
             // If user scrolls left
-            if (cardContainer.frame.origin.x > 0) {
+            if (containerX > 0) {
                 println("state 1 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = 0
                 }, completion: nil)
             
             // If user starts to scroll to the right
-            } else if (cardContainer.frame.origin.x < 0 && cardContainer.frame.origin.x > -160) {
+            } else if (containerX < 0 && containerX > -160) {
                 println("state 2 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = 0
                     }, completion: nil)
+                
             // If user scrolls past first card midpoint
-            } else if (cardContainer.frame.origin.x < -160 && cardContainer.frame.origin.x > -485) {
+            } else if (containerX < -160 && containerX > -485) {
                 println("state 3 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = -320
                     }, completion: nil)
+                
             // If user scrolls past second card midpoint
-            } else if (cardContainer.frame.origin.x < -484) {
+            } else if (containerX < -484) {
                 println("state 3 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = -642
@@ -125,7 +128,6 @@ class SelectedMoodViewController: UIViewController {
         }
         
     }
-
 
     /*
     // MARK: - Navigation
