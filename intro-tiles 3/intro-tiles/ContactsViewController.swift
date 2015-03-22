@@ -17,6 +17,7 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var iconTick: UIImageView!
     @IBOutlet weak var iconTick2: UIImageView!
     @IBOutlet weak var invitesSent: UIImageView!
+    @IBOutlet weak var blurBackground: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,15 +29,9 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
         iconTick2.hidden = true
         
         self.invitesSent.center.y = self.invitesSent.center.y + 188
-    }
-    
-    override func viewWillAppear(animated: Bool) {
         
-//        self.contactsContainer.center.y = self.contactsContainer.center.y + 600
-//         UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseOut, animations: { () -> Void in
-//            self.contactsContainer.center.y = self.contactsContainer.center.y - 600
-//            
-//         }, completion: nil)
+        // Set the contactsContainer to off screen so it can be animated in
+        contactsContainer.frame.origin.y = view.bounds.height + 1
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,7 +51,11 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
             }, completion: { (Bool) -> Void in
                 UIView.animateWithDuration(0.5, delay: 1.5, usingSpringWithDamping: 0.9, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.invitesSent.center.y = self.invitesSent.center.y + 188
-                 }, completion: nil)
+                    }, completion: { (Bool) -> Void in
+                        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                            //
+                        })
+                })
             })
         }
     }
@@ -94,6 +93,36 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
             //
         })
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        //blur image view
+        var lightBlur = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        var blurView = UIVisualEffectView(effect: lightBlur)
+        blurView.frame = blurBackground.bounds
+        blurBackground.addSubview(blurView)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.6, delay: 0, usingSpringWithDamping: 20, initialSpringVelocity: 5, options: nil, animations: { () -> Void in
+            self.contactsContainer.frame.origin.y = 85
+            }) { (Bool) -> Void in
+                //
+        }
+        
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        UIView.animateWithDuration(0.6, delay: 0, usingSpringWithDamping: 20, initialSpringVelocity: 5, options: nil, animations: { () -> Void in
+            self.contactsContainer.frame.origin.y = self.view.bounds.height + 1
+            }) { (Bool) -> Void in
+                //
+        }
+    }
+    override func viewDidDisappear(animated: Bool) {
+        blurBackground.removeFromSuperview()
+    }
+    
+    
     /*
     // MARK: - Navigation
 

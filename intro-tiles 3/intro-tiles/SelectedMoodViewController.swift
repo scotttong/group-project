@@ -128,6 +128,17 @@ class SelectedMoodViewController: UIViewController {
         }
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        var destinationViewController = segue.destinationViewController as ContactsViewController
+        
+        fadeTransition = FadeTransition()
+        fadeTransition.duration = 0.6
+        
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        destinationViewController.transitioningDelegate = fadeTransition
+    }
 
     /*
     // MARK: - Navigation

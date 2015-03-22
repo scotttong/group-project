@@ -328,7 +328,7 @@
                         <outlet property="containerView" destination="V4Q-eN-BMg" id="sCX-Dv-mwA"/>
                         <outlet property="helpText" destination="mw9-VY-oMe" id="Cld-eg-4e2"/>
                         <outlet property="moodBackgroundColor" destination="V4Q-eN-BMg" id="kL1-ZV-aAM"/>
-                        <segue destination="1sa-Yc-9UB" kind="modal" identifier="contactsSegue" id="ds2-0R-3qX"/>
+                        <segue destination="1sa-Yc-9UB" kind="modal" identifier="contactsSegue" id="oS5-1m-i7y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNb-ur-Y2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -381,10 +381,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite" id="Tti-MD-xXS">
+                            <view contentMode="scaleToFill" id="7Qj-Rx-Sbh" userLabel="blurBackground">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" id="tpd-Ih-MTd" userLabel="contactsContainer">
                                 <rect key="frame" x="-21" y="79" width="420" height="613"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -546,12 +547,12 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GSC-V6-U6g"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="blurBackground" destination="7Qj-Rx-Sbh" id="ehc-th-qTh"/>
                         <outlet property="contactsContainer" destination="tpd-Ih-MTd" id="3VI-hq-tGo"/>
                         <outlet property="iconTick" destination="UcY-zH-wGJ" id="ERp-Jm-YHN"/>
                         <outlet property="iconTick2" destination="x2l-ua-XWg" id="JvG-Xp-h9b"/>
@@ -575,7 +576,7 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="bbC-dq-1aM" userLabel="contact recognizer"/>
             </objects>
-            <point key="canvasLocation" x="1586.5" y="367.5"/>
+            <point key="canvasLocation" x="1718.5" y="367.5"/>
         </scene>
     </scenes>
     <resources>
@@ -587,7 +588,6 @@
         <image name="contactsBG" width="375" height="594"/>
         <image name="icon_arrow_back" width="18" height="31"/>
         <image name="icon_tick" width="32" height="34"/>
-        <image name="invite" width="750" height="1334"/>
         <image name="invitessent" width="375" height="188"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
