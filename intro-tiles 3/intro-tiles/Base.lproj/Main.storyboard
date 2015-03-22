@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hhM-C4-4h0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MarkOT-Bold.otf">
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Tiles View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="tilesStory" id="vXZ-lx-hvc" customClass="TilesViewController" customModule="intro_tiles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="B71-Tg-tfe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lrc-y4-Tjb">
+                                        <rect key="frame" x="312" y="0.0" width="70" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressReset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dum-Ah-i7A"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a rainy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4f2-fd-Ykk">
+                                        <rect key="frame" x="20" y="15" width="295" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you in the mood for?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H7Y-SJ-Ymr">
+                                        <rect key="frame" x="20" y="64" width="295" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday evening" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zpz-Hq-3Fc">
+                                        <rect key="frame" x="20" y="31" width="295" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="13k-fj-V92">
+                                <rect key="frame" x="0.0" y="103" width="188" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gettin' turnt up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KSG-Hn-ysS">
+                                        <rect key="frame" x="20" y="130" width="155" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77614030934343436" green="0.47296673058124195" blue="0.72447239053584023" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vB6-FY-kzP" appends="YES" id="fEX-6r-fVg"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="5nN-A8-EKL">
+                                <rect key="frame" x="187" y="103" width="188" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoning out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nph-1B-o2b">
+                                        <rect key="frame" x="20" y="130" width="155" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28063388974081716" green="0.53257909082597843" blue="0.75726010101010099" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SSx-Bk-8Yu" appends="YES" id="aYu-tQ-lLG"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="liw-Tc-2mu">
+                                <rect key="frame" x="0.0" y="291" width="188" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pillow talk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jeo-YY-VKU">
+                                        <rect key="frame" x="20" y="130" width="155" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87766335222929293" green="0.75580746088573081" blue="0.040121077559942847" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="t4d-6F-jKG" appends="YES" id="yYa-dh-8KR"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="dcS-My-QqE">
+                                <rect key="frame" x="187" y="291" width="188" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A quick getaway" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6AP-D9-sn0">
+                                        <rect key="frame" x="20" y="130" width="155" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.24786489304753662" green="0.77742266414141414" blue="0.50570760308597806" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JOi-v8-nmn" appends="YES" id="oJ5-3U-7eb"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="e1k-KO-atW">
+                                <rect key="frame" x="0.0" y="479" width="188" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sweating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AMY-fj-49t">
+                                        <rect key="frame" x="20" y="130" width="159" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93162089639191925" green="0.39569049823652275" blue="0.05140123909249792" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cpv-rk-rdV" appends="YES" id="Fzf-aR-elB"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="FXr-Im-DaZ">
+                                <rect key="frame" x="187" y="479" width="188" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The munchies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xea-zI-zm2">
+                                        <rect key="frame" x="20" y="130" width="155" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93162089639191925" green="0.58019252950138767" blue="0.11257496647714646" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3ug-Gm-QTU" appends="YES" id="5ws-R0-xfP"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N9t-P4-lbg"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tile1" destination="13k-fj-V92" id="XYl-Yw-T5a"/>
+                        <outlet property="tile2" destination="5nN-A8-EKL" id="sk6-tS-7Me"/>
+                        <outlet property="tile3" destination="liw-Tc-2mu" id="G8H-vt-8Ak"/>
+                        <outlet property="tile4" destination="dcS-My-QqE" id="Sb2-kC-fqt"/>
+                        <outlet property="tile5" destination="e1k-KO-atW" id="KUS-pv-RiX"/>
+                        <outlet property="tile6" destination="FXr-Im-DaZ" id="tPz-9M-8Ru"/>
+                        <segue destination="dMI-CS-n6a" kind="push" identifier="moodSegue" id="Bhw-lD-yn6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vB6-FY-kzP" userLabel="tap1">
+                    <connections>
+                        <action selector="didTapTile:" destination="vXZ-lx-hvc" id="tT9-2s-329"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="SSx-Bk-8Yu" userLabel="tap2">
+                    <connections>
+                        <action selector="didTapTile:" destination="vXZ-lx-hvc" id="BeM-fU-VUm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="t4d-6F-jKG" userLabel="tap3">
+                    <connections>
+                        <action selector="didTapTile:" destination="vXZ-lx-hvc" id="HCe-49-lh8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JOi-v8-nmn" userLabel="tap4">
+                    <connections>
+                        <action selector="didTapTile:" destination="vXZ-lx-hvc" id="5mc-hv-678"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cpv-rk-rdV" userLabel="tap5">
+                    <connections>
+                        <action selector="didTapTile:" destination="vXZ-lx-hvc" id="lw4-a5-CuR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3ug-Gm-QTU" userLabel="tap6">
+                    <connections>
+                        <action selector="didTapTile:" destination="vXZ-lx-hvc" id="fkL-wc-orl"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="694.5" y="367.5"/>
+        </scene>
+        <!--Selected Mood View Controller-->
+        <scene sceneID="aMH-hv-Zdm">
+            <objects>
+                <viewController id="dMI-CS-n6a" customClass="SelectedMoodViewController" customModule="intro_tiles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sUy-OM-hYe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="V4Q-eN-BMg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your poison then invite friends!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mw9-VY-oMe">
+                                        <rect key="frame" x="81" y="576" width="213" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="Heh-wa-5Lw" userLabel="cardContainer">
+                                        <rect key="frame" x="0.0" y="68" width="1030" height="506"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-1" id="K3G-ai-8GQ">
+                                                <rect key="frame" x="27" y="20" width="321" height="466"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="8hG-qk-BKF" appends="YES" id="GVA-8J-3qz"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-3" id="Gu6-Rm-hPQ">
+                                                <rect key="frame" x="689" y="20" width="321" height="466"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="z7P-zK-k6C" appends="YES" id="Htd-6d-WjR"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-2" id="ksc-F9-tMn">
+                                                <rect key="frame" x="358" y="20" width="321" height="466"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Mxf-N7-gKL" appends="YES" id="Vzr-Ye-0Xg"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="15B-CR-hYE" appends="YES" id="JM2-2k-iYB"/>
+                                        </connections>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWW-P8-T6n">
+                                        <rect key="frame" x="27" y="19" width="318" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_arrow_back" id="ah9-Iz-2VU">
+                                        <rect key="frame" x="27" y="34" width="18" height="31"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MaS-VS-pdK">
+                                        <rect key="frame" x="12" y="23" width="47" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressDismissButton:" destination="dMI-CS-n6a" eventType="touchUpInside" id="czc-7T-cAl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5045603514" green="0.72105258699999997" blue="0.99894565339999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="evC-T5-KtR"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="activityTitle" destination="EWW-P8-T6n" id="7Xz-Fo-z9k"/>
+                        <outlet property="cardContainer" destination="Heh-wa-5Lw" id="laF-Pb-qV9"/>
+                        <outlet property="containerView" destination="V4Q-eN-BMg" id="sCX-Dv-mwA"/>
+                        <outlet property="helpText" destination="mw9-VY-oMe" id="Cld-eg-4e2"/>
+                        <outlet property="moodBackgroundColor" destination="V4Q-eN-BMg" id="kL1-ZV-aAM"/>
+                        <segue destination="1sa-Yc-9UB" kind="modal" identifier="contactsSegue" id="oS5-1m-i7y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNb-ur-Y2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8hG-qk-BKF" userLabel="Card tap">
+                    <connections>
+                        <action selector="didTapCard:" destination="dMI-CS-n6a" id="a8t-eF-ytn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="15B-CR-hYE" userLabel="CardContainer pan">
+                    <connections>
+                        <action selector="cardContainerPan:" destination="dMI-CS-n6a" id="1CQ-G9-1jU"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="Mxf-N7-gKL" userLabel="card 2 tap">
+                    <connections>
+                        <action selector="didTapCard:" destination="dMI-CS-n6a" id="dOp-kD-nEx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="z7P-zK-k6C" userLabel="card 3 tap">
+                    <connections>
+                        <action selector="didTapCard:" destination="dMI-CS-n6a" id="Mq1-pe-q7e"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1167.5" y="367.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ux2-Io-weV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="hhM-C4-4h0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sds-2W-Dt5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="0z8-OU-KUX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UaQ-VG-Myn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="367"/>
+        </scene>
+        <!--Contacts View Controller-->
+        <scene sceneID="XMw-Er-60H">
+            <objects>
+                <viewController id="1sa-Yc-9UB" customClass="ContactsViewController" customModule="intro_tiles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="21l-0r-Vag">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="7Qj-Rx-Sbh" userLabel="blurBackground">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="tpd-Ih-MTd" userLabel="contactsContainer">
+                                <rect key="frame" x="-21" y="79" width="420" height="613"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="contactsBG" id="klX-Aj-uym">
+                                        <rect key="frame" x="21" y="-1" width="375" height="594"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="if2-HT-mKv">
+                                        <rect key="frame" x="37" y="20" width="343" height="516"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katherine Warren" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hgj-tB-Hxh">
+                                                <rect key="frame" x="12" y="67" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Victoria Burke" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j4i-hh-eyT">
+                                                <rect key="frame" x="13" y="112" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Philip Burke" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jU6-a0-BkE">
+                                                <rect key="frame" x="13" y="158" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christian Howell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TJG-Aq-LZG">
+                                                <rect key="frame" x="13" y="207" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timothy Brewer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PXc-6V-JS7">
+                                                <rect key="frame" x="13" y="306" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brenda Barrett" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RYd-N4-SiK">
+                                                <rect key="frame" x="13" y="355" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laura Anderson" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GhX-h7-zRF">
+                                                <rect key="frame" x="13" y="404" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joe Bloggs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="27I-IY-Xev">
+                                                <rect key="frame" x="13" y="447" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Smith" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PR5-aD-UTR">
+                                                <rect key="frame" x="13" y="492" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christina Adams" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M2c-yI-7pi">
+                                                <rect key="frame" x="13" y="258" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catherine Kim" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lSg-ix-oFh">
+                                                <rect key="frame" x="13" y="20" width="300" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="0.8469662070274353" green="0.84711211919784546" blue="0.84695702791213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="bbC-dq-1aM" appends="YES" id="bFM-3Z-wxF"/>
+                                                </connections>
+                                            </label>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_tick" id="UcY-zH-wGJ">
+                                                <rect key="frame" x="215" y="62" width="32" height="34"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S7Y-CS-LPg">
+                                                <rect key="frame" x="13" y="63" width="322" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="contactsButton:" destination="1sa-Yc-9UB" eventType="touchUpInside" id="Jw7-YU-0Sw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6zk-y3-fPy">
+                                                <rect key="frame" x="8" y="205" width="322" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="contactsButton2:" destination="1sa-Yc-9UB" eventType="touchUpInside" id="lgi-6B-CyL"/>
+                                                </connections>
+                                            </button>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_tick" id="x2l-ua-XWg">
+                                                <rect key="frame" x="203" y="205" width="32" height="34"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                        </subviews>
+                                    </scrollView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Close" id="Swl-hB-Nwi">
+                                        <rect key="frame" x="364" y="15" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="VhT-M9-15L" appends="YES" id="pe5-vv-UdP"/>
+                                        </connections>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="w8J-c0-o3P" userLabel="buttonView">
+                                        <rect key="frame" x="20" y="504" width="380" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="button" id="3pg-E1-WWe">
+                                                <rect key="frame" x="20" y="1" width="340" height="66"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n09-TK-DuI">
+                                                <rect key="frame" x="134" y="20" width="110" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="22"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Tsr-KW-wT5" appends="YES" id="io8-WU-W6z"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="invitessent" id="33x-UX-KWO">
+                                <rect key="frame" x="0.0" y="479" width="375" height="188"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="GSC-V6-U6g"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blurBackground" destination="7Qj-Rx-Sbh" id="ehc-th-qTh"/>
+                        <outlet property="contactsContainer" destination="tpd-Ih-MTd" id="3VI-hq-tGo"/>
+                        <outlet property="iconTick" destination="UcY-zH-wGJ" id="ERp-Jm-YHN"/>
+                        <outlet property="iconTick2" destination="x2l-ua-XWg" id="JvG-Xp-h9b"/>
+                        <outlet property="invitesSent" destination="33x-UX-KWO" id="uUF-bW-OXV"/>
+                        <outlet property="scrollView" destination="if2-HT-mKv" id="jV4-dL-Cf0"/>
+                        <outlet property="selectedContact" destination="lSg-ix-oFh" id="1yd-qZ-iZA"/>
+                        <outlet property="selectedContact2" destination="hgj-tB-Hxh" id="uCF-tz-ob8"/>
+                        <outlet property="selectedContact3" destination="TJG-Aq-LZG" id="yZ3-7o-iyO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4O-AM-Rwi" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Tsr-KW-wT5" userLabel="button recognizer">
+                    <connections>
+                        <action selector="didInvite:" destination="1sa-Yc-9UB" id="Mgb-ra-uoh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VhT-M9-15L" userLabel="close recognizer">
+                    <connections>
+                        <action selector="didTapCloseButton:" destination="1sa-Yc-9UB" id="Nzo-Gm-zl7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bbC-dq-1aM" userLabel="contact recognizer"/>
+            </objects>
+            <point key="canvasLocation" x="1718.5" y="367.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Close" width="20" height="20"/>
+        <image name="button" width="340" height="66"/>
+        <image name="card-1" width="321" height="466"/>
+        <image name="card-2" width="321" height="466"/>
+        <image name="card-3" width="321" height="466"/>
+        <image name="contactsBG" width="375" height="594"/>
+        <image name="icon_arrow_back" width="18" height="31"/>
+        <image name="icon_tick" width="32" height="34"/>
+        <image name="invitessent" width="375" height="188"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

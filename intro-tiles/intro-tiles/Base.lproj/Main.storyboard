@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hhM-C4-4h0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hhM-C4-4h0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -270,54 +270,39 @@
                                         <rect key="frame" x="-11" y="71" width="1022" height="506"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-2" id="qpy-5Z-FHl">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-2" id="qpy-5Z-FHl" userLabel="card-3">
                                                 <rect key="frame" x="681" y="20" width="321" height="466"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="C3e-rn-UZE" appends="YES" id="l3b-OB-UTa"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-1" id="ZP8-Et-iF4">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-1" id="ZP8-Et-iF4" userLabel="card-2">
                                                 <rect key="frame" x="350" y="20" width="321" height="466"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="zb4-wk-wgv" appends="YES" id="ZIx-BG-FuT"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-3" id="1bX-BH-TGg">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card-3" id="1bX-BH-TGg" userLabel="card-1">
                                                 <rect key="frame" x="20" y="20" width="321" height="466"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="fFM-J5-Phe" appends="YES" id="u2X-N3-SSH"/>
+                                                </connections>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kg9-2Y-swb">
-                                                <rect key="frame" x="349" y="20" width="322" height="466"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="didPressCard:" destination="dMI-CS-n6a" eventType="touchUpInside" id="sVP-DM-GqI"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o3f-ef-VlC">
-                                                <rect key="frame" x="19" y="20" width="322" height="466"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="didPressCard2:" destination="dMI-CS-n6a" eventType="touchUpInside" id="IKx-K5-osX"/>
-                                                    <segue destination="rzT-N3-toF" kind="modal" identifier="contactSegue" id="QCa-iS-wHa"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UyO-P0-YkL">
-                                                <rect key="frame" x="681" y="19" width="322" height="466"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
                                         </subviews>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5045603514" green="0.72105258699999997" blue="0.99894565339999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" id="BNz-4F-GdE">
+                                <rect key="frame" x="0.0" y="667" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -330,14 +315,30 @@
                         <outlet property="card2" destination="qpy-5Z-FHl" id="UvZ-As-c6o"/>
                         <outlet property="card3" destination="1bX-BH-TGg" id="o4S-me-B9i"/>
                         <outlet property="cardScrollView" destination="Waq-sX-vQm" id="Mj7-zL-rm3"/>
+                        <outlet property="contactsView" destination="BNz-4F-GdE" id="Y4g-xp-fYZ"/>
                         <outlet property="containerView" destination="V4Q-eN-BMg" id="sCX-Dv-mwA"/>
                         <outlet property="helpText" destination="mw9-VY-oMe" id="Cld-eg-4e2"/>
                         <outlet property="moodBackgroundColor" destination="V4Q-eN-BMg" id="kL1-ZV-aAM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNb-ur-Y2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fFM-J5-Phe" userLabel="Card 1 Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="tapCard:" destination="dMI-CS-n6a" id="C79-2i-GjW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="zb4-wk-wgv" userLabel="Card 2 Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="tapCard:" destination="dMI-CS-n6a" id="G2h-eS-N8V"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="C3e-rn-UZE" userLabel="Card 3 Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="tapCard:" destination="dMI-CS-n6a" id="lAe-Eo-8mE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1500.5" y="366.5"/>
+            <point key="canvasLocation" x="1500" y="366.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ux2-Io-weV">
@@ -360,15 +361,11 @@
         <!--Contacts View Controller-->
         <scene sceneID="XMw-Er-60H">
             <objects>
-                <viewController id="1sa-Yc-9UB" customClass="ContactsViewController" customModule="intro_tiles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="contactsStoryView" id="1sa-Yc-9UB" customClass="ContactsViewController" customModule="intro_tiles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="21l-0r-Vag">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite" id="Tti-MD-xXS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" id="tpd-Ih-MTd" userLabel="contactsContainer">
                                 <rect key="frame" x="-21" y="79" width="420" height="613"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -530,7 +527,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="GSC-V6-U6g"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -559,25 +556,7 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="bbC-dq-1aM" userLabel="contact recognizer"/>
             </objects>
-            <point key="canvasLocation" x="2859.5" y="366.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ocz-Bh-UxD">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rzT-N3-toF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ob-LC-fg9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="1sa-Yc-9UB" kind="relationship" relationship="rootViewController" id="Zbl-QQ-9hG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fjx-NF-la6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2272.5" y="366.5"/>
+            <point key="canvasLocation" x="2299.5" y="367.5"/>
         </scene>
     </scenes>
     <resources>
@@ -588,7 +567,6 @@
         <image name="card-3" width="321" height="466"/>
         <image name="contactsBG" width="375" height="594"/>
         <image name="icon_tick" width="32" height="34"/>
-        <image name="invite" width="750" height="1334"/>
         <image name="invitessent" width="375" height="188"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

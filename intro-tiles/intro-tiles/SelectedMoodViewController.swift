@@ -17,11 +17,17 @@ class SelectedMoodViewController: UIViewController, UIGestureRecognizerDelegate 
     @IBOutlet weak var card3: UIImageView!
 	@IBOutlet weak var containerView: UIView!
     @IBOutlet weak var helpText: UILabel!
+    @IBOutlet weak var contactsView: UIView!
     
     var fadeTransition: FadeTransition!
     
 	var tilesViewController: TilesViewController!
 	var bgcolor: UIColor!
+    
+    var contactsViewController: ContactsViewController!
+    
+    var selectedCardImageView: UIImageView!
+    var backgroundCardImageView: UIImageView!
     
     //Card globals
     var cardPanBegan : CGFloat!
@@ -34,6 +40,12 @@ class SelectedMoodViewController: UIViewController, UIGestureRecognizerDelegate 
 
         // Do any additional setup after loading the view.
 		moodBackgroundColor.backgroundColor = bgcolor
+        
+        // Get the contacts view controller from the storyboard
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        contactsViewController = storyboard.instantiateViewControllerWithIdentifier("contactsStoryView") as ContactsViewController
+        contactsView.addSubview(contactsViewController.view)
+        
         
         // Set the scroll view to the amount of cards + gutter
         cardScrollView.contentSize = CGSize(width: card1.frame.width * 4 + 50, height: card1.frame.height)
@@ -68,96 +80,35 @@ class SelectedMoodViewController: UIViewController, UIGestureRecognizerDelegate 
 	}
     
 	@IBAction func didPressDismissButton(sender: AnyObject) {
-		// for modal transition
-		//dismissViewControllerAnimated(true, completion: nil)
 
 		// for push transition
 		navigationController!.popViewControllerAnimated(true)
 	}
     
-    @IBAction func didPressCard(sender: AnyObject) {
+    @IBAction func tapCard(sender: UITapGestureRecognizer) {
+
+        selectedCardImageView = sender.view as UIImageView!
+        backgroundCardImageView = UIImageView(image: selectedCardImageView.image)
+        backgroundCardImageView.contentMode = selectedCardImageView.contentMode
+        backgroundCardImageView.clipsToBounds = selectedCardImageView.clipsToBounds
         
-//        view.bringSubviewToFront(self.card1)
-//        
-//        UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-//            self.card1.transform = CGAffineTransformMakeScale(0.8, 0.8)
-//            }) { (Bool) -> Void in
-//                UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-//                    self.card1.transform = CGAffineTransformMakeScale(1.3, 1.3)
-//                    }, completion: { (Bool) -> Void in
-////                        self.performSegueWithIdentifier("moodSegue", sender: self)
-//                })
-//                
-//        }
-    }
-    @IBAction func didPressCard2(sender: AnyObject) {
+//        var window = UIApplication.sharedApplication().keyWindow!
+        moodBackgroundColor.addSubview(backgroundCardImageView)
+//        view.bringSubviewToFront(contactsView)
         
-        card3.bringSubviewToFront(self.card3)
+        //blur image view
+        var lightBlur = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        var blurView = UIVisualEffectView(effect: lightBlur)
+        blurView.frame = moodBackgroundColor.bounds
+        moodBackgroundColor.addSubview(blurView)
         
-//        UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-//            
-//            self.card3.transform = CGAffineTransformMakeScale(0.8, 0.8)
-//            }) { (Bool) -> Void in
-//                UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-//                    self.card3.transform = CGAffineTransformMakeScale(1.3, 1.3)
-//                    }, completion: { (Bool) -> Void in
-//                        //                        self.performSegueWithIdentifier("moodSegue", sender: self)
-//                })
-//                
-//        }
-        
-        UIView.animateWithDuration(0.4, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-            
-//            self.card3.center.y = self.card3.center.y - 350
-            }) { (Bool) -> Void in
-                UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-//                    self.card3.transform = CGAffineTransformMakeScale(1.3, 1.3)
-                    }, completion: { (Bool) -> Void in
-                        //                        self.performSegueWithIdentifier("moodSegue", sender: self)
-                })
-                
+        UIView.animateWithDuration(0.6, delay: 0, usingSpringWithDamping: 20, initialSpringVelocity: 5, options: nil, animations: { () -> Void in
+            self.backgroundCardImageView.center = CGPointMake(187.5, 100)
+            self.contactsView.frame.origin.y = 0
+        }) { (Bool) -> Void in
+            //
         }
     }
-    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        var destinationViewController = segue.destinationViewController as ContactsViewController
-//        
-//        fadeTransition = FadeTransition()
-//        fadeTransition.duration = 0.5
-//        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
-//        destinationViewController.transitioningDelegate = fadeTransition
-//        
-//    }
-
-    
-    
-//    @IBAction func didPan(sender: UIPanGestureRecognizer) {
-//        var location = sender.locationInView(view)
-//        var translation = sender.translationInView(view)
-//        var velocity = sender.velocityInView(view)
-//        
-//        if (sender.state == UIGestureRecognizerState.Began) {
-//            cardPanBegan = card1.center.y
-//            
-//        } else if(sender.state == UIGestureRecognizerState.Changed) {
-//            println(translation.y)
-//            finalCardPosition = cardPanBegan + translation.y
-//            card1.center.y = finalCardPosition
-//            
-//        } else if(sender.state == UIGestureRecognizerState.Ended) {
-//            
-//            if (card1.center.y > originalCardPos + 60) {
-//                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 15, options: nil, animations: { () -> Void in
-//                    self.card1.frame.origin.y = -600
-//                    }, completion: nil)
-//            }
-//        }
-//    }
-//    
-//    //Allow panning and scrolling on the same objects
-//    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer!, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer!) -> Bool {
-//        return true
-//    }
     
 
 
