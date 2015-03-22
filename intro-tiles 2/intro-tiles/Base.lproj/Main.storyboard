@@ -353,7 +353,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1167.5" y="367.5"/>
+            <point key="canvasLocation" x="1139.5" y="367.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ux2-Io-weV">

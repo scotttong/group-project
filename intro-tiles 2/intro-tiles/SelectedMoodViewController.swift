@@ -64,7 +64,6 @@ class SelectedMoodViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-		
     }
     
 	@IBAction func didPressDismissButton(sender: AnyObject) {
@@ -91,6 +90,8 @@ class SelectedMoodViewController: UIViewController {
             
         } else if(sender.state == UIGestureRecognizerState.Changed) {
             println(cardContainer.frame.origin.x)
+            // println(velocity.x)
+            // println(translation.x)
             
             finalCardContainerPosition = cardContainerPanBegan + translation.x
             cardContainer.frame.origin.x = finalCardContainerPosition
@@ -102,32 +103,32 @@ class SelectedMoodViewController: UIViewController {
                 println("state 1 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = 0
-                }, completion: nil)
-            
-            // If user starts to scroll to the right
+                    }, completion: nil)
+                
+                // If user starts to scroll to the right
             } else if (containerX < 0 && containerX > -160) {
                 println("state 2 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = 0
                     }, completion: nil)
                 
-            // If user scrolls past first card midpoint
+                // If user scrolls past first card midpoint
             } else if (containerX < -160 && containerX > -485) {
                 println("state 3 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = -332
                     }, completion: nil)
                 
-            // If user scrolls past second card midpoint
+                // If user scrolls past second card midpoint
             } else if (containerX < -484) {
-                println("state 3 hit")
+                println("state 4 hit")
                 UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
                     self.cardContainer.frame.origin.x = -662
                     }, completion: nil)
             }
         }
-        
     }
+    
 
     /*
     // MARK: - Navigation
