@@ -19,18 +19,21 @@ class SelectedMoodViewController: UIViewController {
     @IBOutlet weak var contactContainer: UIView!
     @IBOutlet weak var cardContainer: UIView!
     @IBOutlet weak var activityTitle: UILabel!
+    @IBOutlet weak var avatar2: UIImageView!
+    @IBOutlet weak var avatar1: UIImageView!
     
     var fadeTransition: FadeTransition!
 	var tilesViewController: TilesViewController!
 	var bgcolor: UIColor!
     var activityTitleText: UILabel!
+    var avatarShow: Bool! = true
     
     //Card globals
     var cardContainerPanBegan : CGFloat!
     var finalCardContainerPosition: CGFloat!
     var originalCardPos: CGFloat!
     var cardScrollFrame: CGFloat!
-	
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -59,12 +62,14 @@ class SelectedMoodViewController: UIViewController {
             self.helpText.frame.origin.x = self.helpText.frame.origin.x - 50
         }, completion: nil)
         
+        avatar1.hidden = avatarShow
+        avatar2.hidden = avatarShow
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-		
     }
     
 	@IBAction func didPressDismissButton(sender: AnyObject) {

@@ -122,6 +122,11 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
         blurBackground.removeFromSuperview()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destinationViewController = segue.destinationViewController as SelectedMoodViewController
+        destinationViewController.avatarShow = false
+    }
+    
     
     /*
     // MARK: - Navigation
