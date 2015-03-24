@@ -13,7 +13,11 @@ class InvitationViewController: UIViewController {
 	@IBOutlet weak var blackView: UIView!
 	@IBOutlet weak var inviteCard: UIView!
 	@IBOutlet weak var timerLabel: UILabel!
+
+	var fadeTransition: FadeTransition!
+
 	
+//	var accepted: Bool!
 
 	var seconds = 0
 	var timer = NSTimer()
@@ -25,6 +29,9 @@ class InvitationViewController: UIViewController {
 //		inviteCard.alpha = 1
 		inviteCard.transform = CGAffineTransformMakeScale(0.001, 0.001)
 		startTimer()
+
+//		accepted = false
+		
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,17 +89,44 @@ class InvitationViewController: UIViewController {
 	
 	
 	@IBAction func didPressDismissButton(sender: AnyObject) {
-		dismissViewControllerAnimated(true, completion: nil)
+//		dismissViewControllerAnimated(true, completion: nil)
+		
+		println("dismiss")
+		
+		UIView.animateWithDuration(0.6, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.3, options: nil, animations: { () -> Void in
+			self.inviteCard.transform = CGAffineTransformMakeScale(0.001, 0.001)
+			//			self.inviteCard.frame = CGRect(x: self.view.bounds.width, y: 0, width: 0, height: 0)
+			}) { (Bool) -> Void in
+				//
+		}
+		
+		performSegueWithIdentifier("tilesSegue", sender: self)
+		
 	}
 
-    /*
+		
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		
+		println("custom modal")
+		
+		var destinationViewController = segue.destinationViewController as TilesViewController
+		
+		destinationViewController.accepted = true
+		println(destinationViewController.accepted)
+		fadeTransition = FadeTransition()
+		fadeTransition.duration = 0.5
+		destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+		destinationViewController.transitioningDelegate = fadeTransition
+
+
+		
+		
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+	
 
 }

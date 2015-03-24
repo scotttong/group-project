@@ -14,7 +14,7 @@
 		<string>https://github.com/scotttong/group-project.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>receiver-ui/receiver-ui.xcodeproj</string>
+	<string>receiver-ui-2/receiver-ui.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2B40712385649CD1426696326A27B0A10F45BEC3</key>
