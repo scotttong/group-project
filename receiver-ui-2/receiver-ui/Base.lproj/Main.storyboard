@@ -19,6 +19,7 @@
             <string>MarkOT-Bold</string>
             <string>MarkOT-Bold</string>
             <string>MarkOT-Bold</string>
+            <string>MarkOT-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -169,6 +170,20 @@
                                             <action selector="didTapInviteButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KRB-hG-o33"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" id="WIT-m9-Q6y">
+                                        <rect key="frame" x="325" y="20" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m3n-Yw-oUG">
+                                                <rect key="frame" x="11" y="4" width="10" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93162089640000001" green="0.39569049820000002" blue="0.051401239090000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -178,6 +193,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
+                        <outlet property="favoriteBadge" destination="WIT-m9-Q6y" id="zRZ-vH-een"/>
                         <segue destination="wxb-2v-zPB" kind="modal" identifier="inviteSegue" id="SPW-fg-eZa"/>
                     </connections>
                 </viewController>
@@ -240,9 +256,9 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2lu-IC-p0P">
-                                        <rect key="frame" x="215" y="579" width="46" height="60"/>
+                                        <rect key="frame" x="208" y="579" width="62" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -275,6 +291,7 @@
                         <outlet property="blackView" destination="1Un-BD-opy" id="ak5-Me-gM4"/>
                         <outlet property="inviteCard" destination="Zhq-xs-St6" id="zuz-PG-HAB"/>
                         <outlet property="timerLabel" destination="Gzr-Ee-Xdh" id="sSU-hR-3kp"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="tilesSegue" id="Sly-fd-L5i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kec-sj-pSe" sceneMemberID="firstResponder"/>
