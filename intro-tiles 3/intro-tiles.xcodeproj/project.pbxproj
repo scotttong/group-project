@@ -28,6 +28,8 @@
 		19FE6A8F1AB811D20002FF00 /* ScaleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE6A8E1AB811D20002FF00 /* ScaleTransition.swift */; };
 		1A6A85601AB9E6C100D5BE9E /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A855F1AB9E6C100D5BE9E /* ContactsViewController.swift */; };
 		1A7D7E781AB9EA9200EE8D0F /* ScrollFadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D7E771AB9EA9200EE8D0F /* ScrollFadeTransition.swift */; };
+		1AA089AE1AC20B4600E62A6D /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA089AD1AC20B4600E62A6D /* PlanViewController.swift */; };
+		1AA089B21AC221C600E62A6D /* PlanNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA089B11AC221C600E62A6D /* PlanNavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		19FE6A8E1AB811D20002FF00 /* ScaleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleTransition.swift; sourceTree = "<group>"; };
 		1A6A855F1AB9E6C100D5BE9E /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		1A7D7E771AB9EA9200EE8D0F /* ScrollFadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollFadeTransition.swift; sourceTree = "<group>"; };
+		1AA089AD1AC20B4600E62A6D /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		1AA089B11AC221C600E62A6D /* PlanNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanNavViewController.swift; path = ../PlanNavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				19FE6A591AB8049E0002FF00 /* Main.storyboard */,
+				1AA089B11AC221C600E62A6D /* PlanNavViewController.swift */,
+				1AA089AD1AC20B4600E62A6D /* PlanViewController.swift */,
 				1A6A855F1AB9E6C100D5BE9E /* ContactsViewController.swift */,
 				19FE6A751AB805F20002FF00 /* TilesViewController.swift */,
 				19FE6A871AB80E9F0002FF00 /* SelectedMoodViewController.swift */,
@@ -283,7 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19FE6A881AB80E9F0002FF00 /* SelectedMoodViewController.swift in Sources */,
+				1AA089AE1AC20B4600E62A6D /* PlanViewController.swift in Sources */,
 				19FE6A8B1AB80F5E0002FF00 /* BaseTransition.swift in Sources */,
+				1AA089B21AC221C600E62A6D /* PlanNavViewController.swift in Sources */,
 				19FE6A8F1AB811D20002FF00 /* ScaleTransition.swift in Sources */,
 				1A7D7E781AB9EA9200EE8D0F /* ScrollFadeTransition.swift in Sources */,
 				19FE6A581AB8049E0002FF00 /* ViewController.swift in Sources */,

@@ -21,8 +21,6 @@ class TilesViewController: UIViewController {
 		favoriteBadge.layer.cornerRadius = 15
 		favoriteBadge.transform = CGAffineTransformMakeScale(0.001, 0.001)
 		favoriteBadge.hidden = true
-		
-		
 
     }
 	
@@ -35,7 +33,6 @@ class TilesViewController: UIViewController {
 			
 			UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.6, options: nil, animations: { () -> Void in
 				self.favoriteBadge.transform = CGAffineTransformMakeScale(1, 1)
-
 			}, completion: { (Bool) -> Void in
 				//
 			})
@@ -66,6 +63,7 @@ class TilesViewController: UIViewController {
 		
 		fadeTransition = FadeTransition()
 		fadeTransition.duration = 0.5
+        
 		destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
 		destinationViewController.transitioningDelegate = fadeTransition
 

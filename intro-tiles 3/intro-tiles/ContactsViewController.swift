@@ -18,13 +18,15 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var iconTick2: UIImageView!
     @IBOutlet weak var invitesSent: UIImageView!
     @IBOutlet weak var blurBackground: UIView!
+    
+    var fadeTransition: FadeTransition!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        scrollView.contentSize = CGSize(width: 340, height: 516)
+        scrollView.contentSize = CGSize(width: 340, height: 596)
         iconTick.hidden = true
         iconTick2.hidden = true
         
@@ -41,24 +43,13 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
     
     
     @IBAction func didInvite(sender: UITapGestureRecognizer) {
-        invitesSent.alpha = 1
         
-        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
-            self.contactsContainer.center.y = self.contactsContainer.center.y + 600
+        UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
+            self.contactsContainer.center.y = self.contactsContainer.center.y + 700
         }) { (Bool) -> Void in
-            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
-                self.invitesSent.center.y = self.invitesSent.center.y - 188
-            }, completion: { (Bool) -> Void in
-                UIView.animateWithDuration(0.5, delay: 1.5, usingSpringWithDamping: 0.9, initialSpringVelocity: 10, options: nil, animations: { () -> Void in
-                    self.invitesSent.center.y = self.invitesSent.center.y + 188
-                    }, completion: { (Bool) -> Void in
-                        self.dismissViewControllerAnimated(true, completion: { () -> Void in
-                            //
-                        })
-                })
-            })
+            self.performSegueWithIdentifier("selectedSegue", sender: self)
+            }
         }
-    }
     
     
     @IBAction func didTapText(sender: UITapGestureRecognizer) {
@@ -104,7 +95,7 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidAppear(animated: Bool) {
         UIView.animateWithDuration(0.6, delay: 0, usingSpringWithDamping: 20, initialSpringVelocity: 5, options: nil, animations: { () -> Void in
-            self.contactsContainer.frame.origin.y = 85
+            self.contactsContainer.frame.origin.y = 0
             }) { (Bool) -> Void in
                 //
         }
@@ -123,8 +114,15 @@ class ContactsViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var destinationViewController = segue.destinationViewController as SelectedMoodViewController
-        destinationViewController.avatarShow = false
+        
+        var destinationViewController = segue.destinationViewController as PlanNavViewController
+        
+        fadeTransition = FadeTransition()
+        fadeTransition.duration = 0.3
+        
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        destinationViewController.transitioningDelegate = fadeTransition
+        
     }
     
     
