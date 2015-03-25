@@ -19,14 +19,11 @@ class SelectedMoodViewController: UIViewController {
     @IBOutlet weak var contactContainer: UIView!
     @IBOutlet weak var cardContainer: UIView!
     @IBOutlet weak var activityTitle: UILabel!
-    @IBOutlet weak var avatar2: UIImageView!
-    @IBOutlet weak var avatar1: UIImageView!
     
     var fadeTransition: FadeTransition!
 	var tilesViewController: TilesViewController!
 	var bgcolor: UIColor!
     var activityTitleText: UILabel!
-    var avatarShow: Bool! = true
     
     //Card globals
     var cardContainerPanBegan : CGFloat!
@@ -61,9 +58,6 @@ class SelectedMoodViewController: UIViewController {
             self.helpText.alpha = 0.5
             self.helpText.frame.origin.x = self.helpText.frame.origin.x - 50
         }, completion: nil)
-        
-        avatar1.hidden = avatarShow
-        avatar2.hidden = avatarShow
         
     }
     

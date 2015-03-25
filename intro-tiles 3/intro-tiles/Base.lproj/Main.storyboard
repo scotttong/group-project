@@ -294,21 +294,6 @@
                                         <rect key="frame" x="27" y="34" width="18" height="31"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your poison then invite friends!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mw9-VY-oMe">
-                                        <rect key="frame" x="81" y="573" width="213" height="55"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="avatar-2" id="pAi-pc-N12">
-                                        <rect key="frame" x="193" y="582" width="54" height="55"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="avatar-1" id="cDq-k8-oct">
-                                        <rect key="frame" x="131" y="582" width="54" height="55"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MaS-VS-pdK">
                                         <rect key="frame" x="13" y="23" width="47" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -321,6 +306,13 @@
                                             <action selector="didPressDismissButton:" destination="dMI-CS-n6a" eventType="touchUpInside" id="czc-7T-cAl"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your poison then invite friends!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mw9-VY-oMe">
+                                        <rect key="frame" x="81" y="573" width="213" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkOT-Bold" family="Mark OT" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5045603514" green="0.72105258699999997" blue="0.99894565339999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -333,8 +325,6 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="activityTitle" destination="EWW-P8-T6n" id="7Xz-Fo-z9k"/>
-                        <outlet property="avatar1" destination="cDq-k8-oct" id="a0S-tv-EBQ"/>
-                        <outlet property="avatar2" destination="pAi-pc-N12" id="ZZg-pI-Vnc"/>
                         <outlet property="cardContainer" destination="Heh-wa-5Lw" id="laF-Pb-qV9"/>
                         <outlet property="containerView" destination="V4Q-eN-BMg" id="sCX-Dv-mwA"/>
                         <outlet property="helpText" destination="mw9-VY-oMe" id="Cld-eg-4e2"/>
@@ -616,7 +606,11 @@
                                 <rect key="frame" x="127" y="586" width="54" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="avatar-2" id="kqd-Xg-7Yj">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="avatar-3" id="kqd-Xg-7Yj">
+                                <rect key="frame" x="194" y="586" width="54" height="55"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="avatar-3-accepted" id="Rnh-QD-M2N">
                                 <rect key="frame" x="194" y="586" width="54" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -636,6 +630,16 @@
                                 <rect key="frame" x="0.0" y="667" width="375" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LUb-ZQ-xaO">
+                                <rect key="frame" x="295" y="18" width="72" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPress:" destination="sBA-CH-vTa" eventType="touchUpInside" id="Qua-Yq-5Rw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
@@ -644,6 +648,7 @@
                     <connections>
                         <outlet property="avatar1" destination="tWS-KX-k3R" id="MLw-AN-g89"/>
                         <outlet property="avatar2" destination="kqd-Xg-7Yj" id="fWn-qV-MZr"/>
+                        <outlet property="avatar2Accept" destination="Rnh-QD-M2N" id="4HG-Qw-Q94"/>
                         <outlet property="backArrow" destination="z63-Zz-612" id="s0n-gP-OO6"/>
                         <outlet property="blackView" destination="nG2-ea-9bv" id="nXD-D4-4Rq"/>
                         <outlet property="invitesSent" destination="Ysg-Y0-Zcc" id="9aC-Ga-2OY"/>
@@ -658,7 +663,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2705.5" y="372.5"/>
+            <point key="canvasLocation" x="2652.5" y="372.5"/>
         </scene>
         <!--Plan Nav View Controller-->
         <scene sceneID="MLf-pz-tkl">
@@ -682,7 +687,8 @@
     <resources>
         <image name="Close" width="20" height="20"/>
         <image name="avatar-1" width="54" height="55"/>
-        <image name="avatar-2" width="54" height="55"/>
+        <image name="avatar-3" width="54" height="55"/>
+        <image name="avatar-3-accepted" width="54" height="55"/>
         <image name="button" width="340" height="66"/>
         <image name="card-1" width="321" height="466"/>
         <image name="card-2" width="321" height="466"/>

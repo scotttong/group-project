@@ -12,6 +12,7 @@ class PlanViewController: UIViewController {
     @IBOutlet var blackView: UIView!
     @IBOutlet var avatar1: UIImageView!
     @IBOutlet var avatar2: UIImageView!
+    @IBOutlet weak var avatar2Accept: UIImageView!
     @IBOutlet weak var invitesSent: UIImageView!
     @IBOutlet weak var waitingLabel: UILabel!
     @IBOutlet weak var backArrow: UIImageView!
@@ -47,21 +48,34 @@ class PlanViewController: UIViewController {
             self.blackView.alpha = 0
         }, completion: nil)
         
-        UIView.animateWithDuration(0.5, delay: 2.5, usingSpringWithDamping: 0.7, initialSpringVelocity: 8, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(0.5, delay: 2.3, usingSpringWithDamping: 0.7, initialSpringVelocity: 8, options: nil, animations: { () -> Void in
             self.waitingLabel.alpha = 1
             self.waitingLabel.center.y = self.waitingLabel.center.y - 30
             }, completion: nil)
         
-        UIView.animateWithDuration(0.7, delay: 2.7, usingSpringWithDamping: 0.7, initialSpringVelocity: 8, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(0.5, delay: 2.7, usingSpringWithDamping: 0.7, initialSpringVelocity: 8, options: nil, animations: { () -> Void in
             self.avatar1.transform = CGAffineTransformMakeScale(1, 1)
         }, completion: nil)
-        UIView.animateWithDuration(0.7, delay: 2.9, usingSpringWithDamping: 0.7, initialSpringVelocity: 8, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(0.5, delay: 2.9, usingSpringWithDamping: 0.7, initialSpringVelocity: 8, options: nil, animations: { () -> Void in
             self.avatar2.transform = CGAffineTransformMakeScale(1, 1)
             }, completion: nil)
     }
     
     @IBAction func didTapBack(sender: UITapGestureRecognizer) {
         performSegueWithIdentifier("backTile", sender: self)
+    }
+    @IBAction func didPress(sender: AnyObject) {
+        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 8, options: nil, animations: { () -> Void in
+            self.avatar2Accept.alpha = 1
+            self.avatar2.transform = CGAffineTransformMakeScale(1.15, 1.15)
+            self.avatar2Accept.transform = CGAffineTransformMakeScale(1.15, 1.15)
+        }) { (Bool) -> Void in
+            UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 8, options: nil, animations: { () -> Void in
+                self.avatar2.alpha = 0
+                self.avatar2.transform = CGAffineTransformMakeScale(1, 1)
+                self.avatar2Accept.transform = CGAffineTransformMakeScale(1, 1)
+            }, completion: nil)
+        }
     }
 
     /*
